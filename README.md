@@ -66,7 +66,7 @@ void RS485_TX_Transform( uint8_t* txbuf, uint8_t size ){
 
 
 
-<img src="STM32 UART.assets/1.png" alt="1"  />
+<img src="/1.png" alt="1"  />
 
 
 
@@ -84,7 +84,7 @@ HAL_UART_Transmit_IT 雖然可以讓MCU達成類似背景執行UART TX傳輸的�
 
 另外如果要實作 RS485的CTRL Pin傳輸完畢拉LOW的功能，可以寫一個小function在main迴圈抓取ISR Register的UART_FLAG_TC判斷是否傳輸完畢。
 
-<img src="STM32 UART.assets/3.png" alt="3"  />
+<img src="/3.png" alt="3"  />
 
 
 
@@ -140,4 +140,4 @@ void DEControl_Task(){
 }
 ```
 
-<img src="STM32 UART.assets/2.png" alt="2"  />
+<img src="/2.png" alt="2"  />
